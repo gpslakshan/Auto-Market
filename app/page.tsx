@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <section className="flex">
-        <div className="w-2/5 pt-20">
+      <section className="flex flex-col xl:flex-row">
+        <div className="w-full xl:w-2/5 pt-20">
           <p className="text-lg">
             Browse, buy, and drive your dream car today.
           </p>
@@ -15,7 +15,7 @@ export default function Home() {
           </p>
         </div>
         <Image
-          className="w-3/5"
+          className="w-full xl:w-3/5"
           src="/bmw.webp"
           alt="nextjs"
           width={1000}
