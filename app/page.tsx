@@ -14,9 +14,9 @@ export default function Home() {
             here.
           </p>
         </div>
-        {/* <div className="w-full xl:w-3/5 flex justify-end items-end xl:h-screen"> */}
-        <div className="hero__image-container">
-          <div className="hero__image">
+        <div className="xl:w-3/5 w-full flex justify-end items-end xl:h-screen">
+          <div className="relative w-full xl:h-full md:h-[560px] h-[400px] z-0">
+            {/* https://stackoverflow.com/questions/67421778/next-js-image-layout-fill-is-broken */}
             <Image src="/hero.png" alt="hero" fill className="object-contain" />
           </div>
           <div className="hero__image-overlay" />
