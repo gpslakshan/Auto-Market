@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
-      <section className="flex flex-col xl:flex-row">
-        <div className="w-full xl:w-2/5 pt-20">
+    <main className="w-full">
+      <section className="flex flex-col xl:flex-row relative overflow-hidden">
+        <div className="xl:w-2/5 pt-20">
           <p className="text-lg">
             Browse, buy, and drive your dream car today.
           </p>
@@ -14,13 +14,13 @@ export default function Home() {
             here.
           </p>
         </div>
-        <Image
-          className="w-full xl:w-3/5"
-          src="/bmw.webp"
-          alt="nextjs"
-          width={1000}
-          height={800}
-        />
+        {/* <div className="w-full xl:w-3/5 flex justify-end items-end xl:h-screen"> */}
+        <div className="hero__image-container">
+          <div className="hero__image">
+            <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          </div>
+          <div className="hero__image-overlay" />
+        </div>
       </section>
     </main>
   );
