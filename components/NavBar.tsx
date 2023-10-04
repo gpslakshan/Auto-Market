@@ -6,7 +6,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <header className="w-full absolute z-10">
-      <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-1">
+      <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-3">
         <Link href="/" className="flex items-center justify-center gap-3">
           <Image
             src="/logo.svg"
@@ -25,7 +25,9 @@ const NavBar = () => {
           ))}
         </ul>
         <div className="cursor-pointer max-lg:hidden font-medium text-lg">
-          Sign in / Register
+          <button className="bg-green-400 text-white xl:text-black xl:bg-white xl:hover:bg-green-700 xl:hover:text-white px-5 py-4 rounded-full">
+            Login / Register
+          </button>
         </div>
         <div className="lg:hidden block">
           <Image

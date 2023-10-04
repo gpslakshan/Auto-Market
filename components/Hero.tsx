@@ -5,7 +5,7 @@ import { statistics } from "@/constants";
 
 const Hero = () => {
   return (
-    <section className="w-full max-w-[1440px] mx-auto gap-5 padding-x flex flex-col xl:flex-row relative">
+    <section className="w-full max-w-[1440px] min-h-screen mx-auto gap-5 padding-x flex flex-col xl:flex-row relative">
       <div className="xl:w-2/5 w-full pt-36">
         <p className="text-sm sm:text-2xl font-extrabold text-green-400">
           Browse, buy, and drive your dream car today.
