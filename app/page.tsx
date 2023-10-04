@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full">
-      <section className="flex flex-col xl:flex-row relative overflow-hidden">
-        <div className="xl:w-2/5 pt-20">
+      <section className="w-full flex flex-col xl:flex-row relative overflow-hidden">
+        <div className="xl:w-2/5 w-full pt-20">
           <p className="text-lg">
             Browse, buy, and drive your dream car today.
           </p>
