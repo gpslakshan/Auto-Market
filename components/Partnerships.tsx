@@ -6,7 +6,7 @@ const Partnerships = () => {
   return (
     <section className="padding-x max-w-[1440px] mx-auto">
       <p className="text-[26px] font-bold text-slate-700">Partnership with:</p>
-      <div className="mt-4 flex flex-wrap justify-start max-sm:gap-x-6 sm:justify-between gap-y-3">
+      <div className="mt-4 mb-4 flex max-sm:flex-col max-sm:gap-y-4 sm:gap-6">
         {partnerships.map((partner, index) => (
           <CarCompanyCard
             key={index}
