@@ -11,7 +11,7 @@ const SpecialOffer = () => {
             <span className="text-green-400 font-extrabold">Special Offer</span>
             : Explore the 2023 Toyota RAV4
           </h2>
-          <p className="text-xl leading-8 mt-6 mb-2">
+          <p className="text-xl leading-8 mt-6 mb-10">
             Discover the exceptional value of the 2023 Toyota RAV4 XLE. Act now
             to take advantage of this exclusive offer and drive home your new
             RAV4 today! (
