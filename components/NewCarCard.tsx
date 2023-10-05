@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CustomButton from "./CustomButton";
 
 interface Props {
   imgURL: string;
@@ -18,18 +19,19 @@ const NewCarCard = ({ imgURL, name, description, price }: Props) => {
         <Image
           src={imgURL}
           alt={name}
-          width={280}
-          height={280}
+          width={400}
+          height={400}
           className="h-[120px] object-contain"
         />
       </div>
-      <h3 className="mt-1 text-lg font-bold">{name}</h3>
-      <p className="h-[60px] overflow-hidden max-sm:mb-4 mb-2 text-sm text-slate-600">
+      <h3 className="mt-1 text-2xl font-bold">{name}</h3>
+      <p className="max-sm:h-[80px] h-[100px] overflow-hidden max-sm:mb-4 mb-2 text-base text-slate-600">
         {description}
       </p>
-      <button className="px-2 py-2 border bg-green-400 text-black font-bold text-base rounded-full hover:bg-green-600 hover:text-white">
+      <CustomButton label="View More" />
+      {/* <button className="px-2 py-2 border bg-green-400 text-black font-bold text-base rounded-full hover:bg-green-600 hover:text-white">
         View More
-      </button>
+      </button> */}
     </div>
   );
 };

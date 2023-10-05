@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import NewCollection from "@/components/NewCollection";
 import Partnerships from "@/components/Partnerships";
 import Services from "@/components/Services";
+import SpecialOffer from "@/components/SpecialOffer";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Partnerships />
       <NewCollection />
+      <SpecialOffer />
       <Services />
     </main>
   );
