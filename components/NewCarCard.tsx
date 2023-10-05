@@ -10,7 +10,10 @@ interface Props {
 
 const NewCarCard = ({ imgURL, name, description, price }: Props) => {
   return (
-    <div className="shadow-xl rounded-[10px] w-full py-2 px-3 flex flex-col flex-1">
+    <div
+      className="shadow-xl rounded-[10px] w-full py-2 px-3 flex flex-col flex-1
+     lg:transition lg:hover:-translate-y-6 lg:hover:scale-110 lg:duration-700 lg:ease-in-out"
+    >
       <div className="flex justify-center items-center">
         <Image
           src={imgURL}
