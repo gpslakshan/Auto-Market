@@ -70,3 +70,20 @@ export const services = [
       "Simplify the process of upgrading to your dream car by trading in your current vehicle with us, getting the best value for your trade.",
   },
 ];
+
+export const reviews = [
+  {
+    imgURL: "/customer1.jpeg",
+    customerName: "John Dawson",
+    rating: 5.0,
+    feedback:
+      "I recently purchased a car from this dealership, and I couldn't be happier with the service I received. The staff was incredibly knowledgeable and helped me find the perfect vehicle for my needs. The buying process was smooth, and I got a great deal. Highly recommended!",
+  },
+  {
+    imgURL: "/customer2.jpeg",
+    customerName: "Sarah Hales",
+    rating: 4.5,
+    feedback:
+      "I traded in my old car for a newer model, and the experience was fantastic. The trade-in process was fair, and they helped me find a car that fit my budget and preferences. The team here genuinely cares about their customers, and it shows. I'm thrilled with my new ride!",
+  },
+];

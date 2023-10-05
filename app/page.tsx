@@ -1,3 +1,4 @@
+import CustomerReviews from "@/components/CustomerReviews";
 import Hero from "@/components/Hero";
 import NewCollection from "@/components/NewCollection";
 import Partnerships from "@/components/Partnerships";
@@ -12,6 +13,7 @@ export default function Home() {
       <NewCollection />
       <SpecialOffer />
       <Services />
+      <CustomerReviews />
     </main>
   );
 }

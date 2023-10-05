@@ -13,12 +13,12 @@ const Hero = () => {
         <h1 className="mt-3 sm:mt-10 text-6xl sm:text-8xl font-bold">
           Find Your Dream Car
         </h1>
-        <p className="text-slate-700 text-sm sm:text-2xl leading-6 mt-6 mb-14">
+        <p className="text-slate-700 text-sm sm:text-2xl leading-6 mt-6 max-sm:mb-4 mb-14">
           Join thousands of satisfied customers who've found their ideal car
           here.
         </p>
         <CustomButton label="Explore Cars" iconURL="./arrow-right.svg" />
-        <div className="w-full flex flex-wrap justify-start items-start gap-x-16 gap-y-6 mt-20">
+        <div className="w-full flex flex-wrap justify-start items-start gap-x-16 gap-y-6 max-sm:mt-10 mt-20">
           {statistics.map((stat, index) => (
             <div key={index}>
               <p className="text-xl sm:text-4xl font-bold">{stat.value}</p>
