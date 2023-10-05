@@ -49,3 +49,24 @@ export const newCars = [
     price: "$42,000",
   },
 ];
+
+export const services = [
+  {
+    imgURL: "/search.svg",
+    label: "Car Inspections",
+    subtext:
+      "Ensure peace of mind with our thorough car inspections, covering everything from engine health to safety features, so you can make an informed purchase decision.",
+  },
+  {
+    imgURL: "/dollar-sign.svg",
+    label: "Financing Assistance",
+    subtext:
+      "Get behind the wheel faster with our personalized financing options, designed to match your budget and needs, making car ownership hassle-free.",
+  },
+  {
+    imgURL: "/deal.svg",
+    label: "Trade-In Services",
+    subtext:
+      "Simplify the process of upgrading to your dream car by trading in your current vehicle with us, getting the best value for your trade.",
+  },
+];
