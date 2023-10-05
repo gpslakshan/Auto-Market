@@ -10,3 +10,11 @@ export const statistics = [
   { value: "500+", label: "Dealerships" },
   { value: "50+", label: "Cities" },
 ];
+
+export const partnerships = [
+  { name: "Toyota", iconURL: "/toyota.svg" },
+  { name: "Mitsubishi", iconURL: "/mitsubishi.svg" },
+  { name: "Honda", iconURL: "/honda.svg" },
+  { name: "BMW", iconURL: "/bmw.svg" },
+  { name: "Audi", iconURL: "/audi.svg" },
+];
