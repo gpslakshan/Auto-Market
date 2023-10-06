@@ -87,3 +87,42 @@ export const reviews = [
       "I traded in my old car for a newer model, and the experience was fantastic. The trade-in process was fair, and they helped me find a car that fit my budget and preferences. The team here genuinely cares about their customers, and it shows. I'm thrilled with my new ride!",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Additional Information",
+    links: [
+      { name: "Careers", link: "/" },
+      { name: "Dealer Locations", link: "/" },
+      { name: "Blog", link: "/" },
+      { name: "Car Buying Guide", link: "/" },
+      { name: "Site Map", link: "/" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { name: "About us", link: "/" },
+      { name: "FAQs", link: "/" },
+      { name: "Our Team", link: "/" },
+      { name: "Privacy policy", link: "/" },
+      { name: "Blog", link: "/" },
+    ],
+  },
+  {
+    title: "Get in touch",
+    links: [
+      {
+        name: "customer@automarket.com",
+        link: "mailto:customer@automarket.com",
+      },
+      { name: "+92554862354", link: "tel:+92554862354" },
+    ],
+  },
+];
+
+export const socialMedia = [
+  { src: "/facebook.svg", alt: "facebook logo" },
+  { src: "/twitter.svg", alt: "twitter logo" },
+  { src: "/instagram.svg", alt: "instagram logo" },
+];
