@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen md:h-[560px] h-[400px] overflow-hidden;
+@layer utilities {
+  .padding-x {
+    @apply sm:px-16 px-6;
+  }
 }
 
-.padding-x {
-  @apply sm:px-16 px-6;
+@layer components {
+  .hero__image-overlay {
+    @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen md:h-[560px] h-[400px] overflow-hidden;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-500 pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-500 max-sm:rounded-full;
+  }
 }

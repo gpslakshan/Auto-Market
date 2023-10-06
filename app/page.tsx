@@ -4,6 +4,7 @@ import NewCollection from "@/components/NewCollection";
 import Partnerships from "@/components/Partnerships";
 import Services from "@/components/Services";
 import SpecialOffer from "@/components/SpecialOffer";
+import Subscribe from "@/components/Subscribe";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SpecialOffer />
       <Services />
       <CustomerReviews />
+      <Subscribe />
     </main>
   );
 }

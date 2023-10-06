@@ -18,7 +18,7 @@ const SpecialOffer = () => {
             <span className="text-green-400 font-extrabold"> Save $2,000!</span>
             )
           </p>
-          <div>
+          <div className="mb-10">
             <CustomButton label="Shop Now" iconURL="./arrow-right.svg" />
           </div>
         </div>
