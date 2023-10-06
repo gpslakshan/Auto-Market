@@ -1,9 +1,13 @@
+"use client";
+
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
+  const [toggleDropDown, setToggleDropDown] = useState(false);
+
   return (
     <header className="w-full absolute z-10">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-3">
@@ -19,8 +23,10 @@ const NavBar = () => {
         </Link>
         <ul className="max-lg:hidden flex gap-12 ">
           {navLinks.map((link, index) => (
-            <li key={index} className="cursor-pointer text-lg text-slate-600">
-              {link.label}
+            <li key={index}>
+              <Link href="/" className="lg:text-base xl:text-lg text-slate-600">
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -35,8 +41,33 @@ const NavBar = () => {
             alt="hamburger icon"
             width={25}
             height={25}
+            onClick={() => setToggleDropDown(!toggleDropDown)}
           />
         </div>
+        {/* Mobile Navigation */}
+        {toggleDropDown && (
+          <div className="dropdown">
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                href="/"
+                className="dropdown_link"
+                onClick={() => setToggleDropDown(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <button
+              type="button"
+              onClick={() => {
+                setToggleDropDown(false);
+              }}
+              className="mt-5 w-full black_btn"
+            >
+              Sign-In / Register
+            </button>
+          </div>
+        )}
       </nav>
     </header>
   );
